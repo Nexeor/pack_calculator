@@ -37,13 +37,26 @@ def read_page(url, card_data):
         # Print an error message if the request was not successful
         print('Error:', response.status_code)
 
-commons = {}
-uncommons = {}
-rares = {}
-mythics = {}
+commons = []
+uncommons = []
+rares = []
+mythics = []
+
+# Given a list of cards, sort them by rarity
+def sort_rarity(card_list):
+    for card in card_list:
+        if card['rarity'] == "common":
+            commons.append(card)
+        elif card['rarity'] == "uncommon":
+            uncommons.append(card)
+        elif card['rarity'] == "rare":
+            rares.append(card)
+        elif card['rarity'] == "mythic":
+            mythics.append(card)
 
 url = 'https://api.scryfall.com/cards/search?as=grid&order=name&q=%28game%3Apaper%29+set%3Amkm'
 num_cards, card_list = read_url(url)
 
-for card in card_list:
+sort_rarity(card_list)
+for card in commons:
     print(card['name'])
