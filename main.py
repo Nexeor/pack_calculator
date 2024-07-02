@@ -28,20 +28,34 @@ def read_page(url):
         print('Error:', response.status_code)
         return None
     
-# Given a list of URLS, read the cards from them and organize it in an output file
-def organize_categories(input, output):
+# Given a list of URLs, read the cards from them and organize it in a JSON file
+def organize_categories(input, output, categories):
     input_file = open(input, 'r')
-    output_file = open(output, 'a')
+    output_file = open(output, 'w')
+    out = {}
     
     for line in input_file:
+        # Parse the category/URL and gather the card list
         parsed = line.split(';')
-        print(parsed[1])
+        category_name = parsed[0]
+        print("Reading from URL: " + parsed[1])
         cards = read_url(parsed[1])
-        output_file.write(parsed[0] + "("+ str(len(cards)) + ")" + '\n')
-
+        
+        # Create a dict out of the gathered cards
+        category = []
         for i in range(0, len(cards)):
-            output_file.write(str(i + 1) + ") " + cards[i]['name'] + '\n')
+            category.append(cards[i]['name'])
+        
+        full_category = { 'num_cards' : len(cards), 'cards' : category }
+        print(full_category)
+        out[category_name] = full_category
+
+    # Write the dict as a JSON file 
+    # output_file.write(json.dumps({categories}, indent=4))
+    print(json.dumps(out, indent = 4))
+
 
 category_file = 'mh3_categories.txt'
 card_file = 'mh3_cards.txt'
-organize_categories(category_file, card_file)
+categories = {}
+organize_categories(category_file, card_file, categories)
