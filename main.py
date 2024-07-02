@@ -43,7 +43,7 @@ rares = []
 mythics = []
 
 # Given a list of cards, sort them by rarity
-def sort_rarity(card_list):
+def sort_categories(card_list):
     for card in card_list:
         if card['rarity'] == "common":
             commons.append(card)
@@ -54,9 +54,45 @@ def sort_rarity(card_list):
         elif card['rarity'] == "mythic":
             mythics.append(card)
 
-url = 'https://api.scryfall.com/cards/search?as=grid&order=name&q=%28game%3Apaper%29+set%3Amkm'
+
+
 num_cards, card_list = read_url(url)
 
+print(card_list[0]['card_faces'])
+
 sort_rarity(card_list)
-for card in commons:
-    print(card['name'])
+with open('mh3_cards.txt', 'w') as file:
+    file.write("COMMONS\n")
+    for i in range(0, len(commons)):
+        card = commons[i]
+        file.write(str(i+1) + ") " + card['name'] + " " + card['id'] + "\n")
+    file.write("---------------------------------------------------------------------------")   
+    for i in range(0, len(uncommon)):
+        card = uncommons[i]
+        file.write(str(i+1) + ") " + card['name'] + " " + card['id'] + "\n")
+    file.write("---------------------------------------------------------------------------")     
+    for i in range(0, len(rare)):
+        card = rares[i]
+        file.write(str(i+1) + ") " + card['name'] + " " + card['id'] + "\n")
+    file.write("---------------------------------------------------------------------------")    
+
+categories = {
+    "mh3_commons" : None,
+    "mh3_uncommmons" : None,
+    "mdfc_uncommons" : None,
+    "ntm_uncommons" : None,
+    "mh3_rares" : None,
+    "mh3_mythics" : None,
+    "retro_mh3_rares" : None,
+    "retro_mh3_mythics" : None,
+    "retro_ntm_rares/mythics" : None,
+    "retro_ntm_commons" : None,
+    "retro_ntm_uncommons" : None,
+    "borderless" : None,
+    "borderless_ntm" : None,
+    "profile_borderless" : None,
+    "profile_ntm_borderless" : None,
+    "framebreak_borderless" : None,
+    "framebreak_ntm_borderless" : None,
+}
+
