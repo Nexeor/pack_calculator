@@ -27,8 +27,21 @@ def read_page(url):
         # Print an error message if the request was not successful
         print('Error:', response.status_code)
         return None
+    
+# Given a list of URLS, read the cards from them and organize it in an output file
+def organize_categories(input, output):
+    input_file = open(input, 'r')
+    output_file = open(output, 'a')
+    
+    for line in input_file:
+        parsed = line.split(';')
+        print(parsed[1])
+        cards = read_url(parsed[1])
+        output_file.write(parsed[0] + "("+ str(len(cards)) + ")" + '\n')
 
+        for i in range(0, len(cards)):
+            output_file.write(str(i + 1) + ") " + cards[i]['name'] + '\n')
 
-card_list = read_url('https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Ac+-type%3Abasic&unique=cards&as=grid&order=name')
-for i in range(1, len(card_list) + 1):
-    print(str(i) + ") " + card_list[i - 1]['name'])
+category_file = 'mh3_categories.txt'
+card_file = 'mh3_cards.txt'
+organize_categories(category_file, card_file)

@@ -1,20 +1,20 @@
-common ; 'https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Ac+-type%3Abasic&unique=cards&as=grid&order=name'
-uncommon ; 'https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Au+-is%3Adouble-faced+cn<237&unique=cards&as=grid&order=name'
-uncommon_mdfc ;'https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Au+-type%3Abasic+is%3Adouble-faced+&unique=cards&as=grid&order=name'
-mh3_rares ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Ar+cn<262&unique=cards&as=grid&order=name'
-mh3_mythic ; 'https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Am+cn<262&unique=cards&as=grid&order=name'
-mh3_retro_frame ; 'https://api.scryfall.com/cards/search?q=+set%3Amh3+%28r%3Am+OR+r%3Ar%29+is%3Aold+-is%3Apromo&unique=cards&as=grid&order=name'; Kaalia of the Vast; Toxic Deluge; Kappa Canoneer
-mh3_frame_break ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>319+cn<345&unique=cards&as=grid&order=set'; Kaalia of the Vast; Orim's Chant
-mh3_profile ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28%28CN<381+AND+CN>361%29+AND+-CN%3D365+AND+-CN%3D368+AND+-CN%3D372+AND+-CN%3D375%29&unique=cards&as=grid&order=set'
-mh3_concept ;  'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>380+cn<384&unique=cards&as=grid&order=set'
-mh3_DFC_borderless ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>441+cn<447&unique=cards&as=grid&order=set'
-mh3_borderless_lands ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>349+cn<362&unique=cards&as=grid&order=set', Phyrexian Tower
-ntm_uncommons; 'https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Au+cn>261+cn<303&unique=cards&as=grid&order=set'
-ntm_rares ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Ar+cn>261+cn<303&unique=cards&as=grid&order=set'
-ntm_mythics ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Am+cn>261+cn<304&unique=cards&as=grid&order=set'
-ntm_frame_break ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28CN%3D323+OR+CN%3D343+OR+%28CN>345+AND+CN<351%29%29&unique=cards&as=grid&order=set'
-ntm_profile ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28CN%3D365+OR+CN%3D368+OR+CN%3D372+OR+CN%3D375%29&unique=cards&as=grid&order=set'
-ntm_retro ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aold+%28r%3Ar+OR+r%3Am%29+%28CN%3D395+OR+CN%3D401+OR+CN%3D412%29&unique=cards&as=grid&order=set'
-ntm_borderless_lands ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+CN%3D355&unique=cards&as=grid&order=set'
-commander_mythics; 'https://api.scryfall.com/cards/search?q=%28game%3Apaper%29+set%3Am3c+cn<17+%2B%2B&unique=cards&as=grid&order=name'
-full_art_snow ; 'https://api.scryfall.com/cards/search?q=set%3Amh3+cn%3D309&unique=cards&as=grid&order=name'
+common ; https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Ac+-type%3Abasic&unique=cards&as=grid&order=name
+uncommon ; https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Au+-is%3Adouble-faced+cn<237&unique=cards&as=grid&order=name
+uncommon_mdfc ;https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Au+-type%3Abasic+is%3Adouble-faced+&unique=cards&as=grid&order=name
+mh3_rares ; https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Ar+cn<262&unique=cards&as=grid&order=name
+mh3_mythic ; https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Am+cn<262&unique=cards&as=grid&order=name
+mh3_retro_frame ; https://api.scryfall.com/cards/search?q=+set%3Amh3+%28r%3Am+OR+r%3Ar%29+is%3Aold+-is%3Apromo&unique=cards&as=grid&order=name; Kaalia of the Vast; Toxic Deluge; Kappa Canoneer
+mh3_frame_break ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>319+cn<345&unique=cards&as=grid&order=set; Kaalia of the Vast; Orims Chant
+mh3_profile ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28%28CN<381+AND+CN>361%29+AND+-CN%3D365+AND+-CN%3D368+AND+-CN%3D372+AND+-CN%3D375%29&unique=cards&as=grid&order=set
+mh3_concept ;  https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>380+cn<384&unique=cards&as=grid&order=set
+mh3_DFC_borderless ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>441+cn<447&unique=cards&as=grid&order=set
+mh3_borderless_lands ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>349+cn<362&unique=cards&as=grid&order=set, Phyrexian Tower
+ntm_uncommons; https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Au+cn>261+cn<303&unique=cards&as=grid&order=set
+ntm_rares ; https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Ar+cn>261+cn<303&unique=cards&as=grid&order=set
+ntm_mythics ; https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Am+cn>261+cn<304&unique=cards&as=grid&order=set
+ntm_frame_break ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28CN%3D323+OR+CN%3D343+OR+%28CN>345+AND+CN<351%29%29&unique=cards&as=grid&order=set
+ntm_profile ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28CN%3D365+OR+CN%3D368+OR+CN%3D372+OR+CN%3D375%29&unique=cards&as=grid&order=set
+ntm_retro ; https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aold+%28r%3Ar+OR+r%3Am%29+%28CN%3D395+OR+CN%3D401+OR+CN%3D412%29&unique=cards&as=grid&order=set
+ntm_borderless_lands ; https://api.scryfall.com/cards/search?q=set%3Amh3+CN%3D355&unique=cards&as=grid&order=set
+commander_mythics; https://api.scryfall.com/cards/search?q=%28game%3Apaper%29+set%3Am3c+cn<17+%2B%2B&unique=cards&as=grid&order=name
+full_art_snow ; https://api.scryfall.com/cards/search?q=set%3Amh3+cn%3D309&unique=cards&as=grid&order=name
