@@ -522,5 +522,20 @@
         "cards": [
             "Snow-Covered Wastes"
         ]
+    },
+    "special_guests": {
+        "num_cards": 10,
+        "cards": [
+            "Thought-Knot Seer",
+            "Prismatic Ending",
+            "Dismember",
+            "Persist",
+            "Expressive Iteration",
+            "Solitude",
+            "Subtlety",
+            "Grief",
+            "Fury",
+            "Endurance"
+        ]
     }
 }

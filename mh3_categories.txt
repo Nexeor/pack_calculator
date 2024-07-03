@@ -1,7 +1,7 @@
 common;https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Ac+-type%3Abasic&unique=cards&as=grid&order=name
 uncommon;https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Au+-is%3Adouble-faced+cn<237&unique=cards&as=grid&order=name
 uncommon_mdfc;https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Au+-type%3Abasic+is%3Adouble-faced+&unique=cards&as=grid&order=name
-mh3_rares;https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Ar+cn<262&unique=cards&as=grid&order=name
+mh3_rare;https://api.scryfall.com/cards/search?q=set%3Amh3+r%3Ar+cn<262&unique=cards&as=grid&order=name
 mh3_mythic;https://api.scryfall.com/cards/search?q=+set%3Amh3+r%3Am+cn<262&unique=cards&as=grid&order=name
 mh3_retro_frame;https://api.scryfall.com/cards/search?q=+set%3Amh3+%28r%3Am+OR+r%3Ar%29+is%3Aold+-is%3Apromo+-%28cn%3D412+OR+cn%3D401+OR+cn%3D395%29&unique=cards&as=grid&order=name
 mh3_frame_break;https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+cn>319+cn<345+-%28cn%3D323+OR+cn%3D343%29&unique=cards&as=grid&order=set
@@ -18,3 +18,6 @@ ntm_retro;https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aold+%28r%3Ar+OR
 ntm_borderless_lands;https://api.scryfall.com/cards/search?q=set%3Amh3+CN%3D355&unique=cards&as=grid&order=set
 commander_mythics;https://api.scryfall.com/cards/search?q=%28game%3Apaper%29+set%3Am3c+cn<17+%2B%2B&unique=cards&as=grid&order=name
 full_art_snow;https://api.scryfall.com/cards/search?q=set%3Amh3+cn%3D309&unique=cards&as=grid&order=name
+special_guests;https://api.scryfall.com/cards/search?q=set%3Aspg+%28cn>38+AND+cn<49%29&unique=cards&as=grid&order=set
+rare_booster_fun;https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aborderless+%28%28cn>319+cn<447+not%3Areprint%29+OR+%28cn>351+cn<362+is%3Areprint+-cn%3D355%29%29&unique=cards&as=grid&order=set
+retro_frame_all;https://api.scryfall.com/cards/search?q=set%3Amh3+is%3Aold+-is%3Apromo+-%28cn%3D412+OR+cn%3D401+OR+cn%3D395%29&unique=cards&as=grid&order=set
