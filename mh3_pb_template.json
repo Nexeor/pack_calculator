@@ -1,57 +1,57 @@
 {
     "common": {
-        "repeated": true,
-        "times_repeated": 5,
+        "num_slots": 5,
         "rng_table": {
             "category": ["common"],
             "chance": ["100.0"]
         }
     },
     "special_guest": {
-        "repeated": false,
-        "times_repeated": 1,
+        "num_slots": 1,
         "rng_table": {
             "category": ["common", "special_guest"],
             "chance": ["99.8", "0.2"]
         }
     },
     "uncommon": {
-        "repeated": true,
-        "times_repeated": 3,
+        "num_slots": 3,
         "rng_table": {
             "category": ["uncommon", "uncommon_mdfc"],
             "chance": ["80.0", "20.0"]
         }
     },
     "mh3_rare": {
-        "repeated": false,
-        "times_repeated": 1,
+        "num_slots": 1,
         "rng_table": {
-            "category": ["mh3_rare", "mh3_mythic", "mh3_retro_frame", "mh3_booster_fun"],
+            "category": ["mh3_rare", "mh3_mythic", "mh3_retro_frame", "booster_fun"],
             "chance": ["79.8", "13.0", "2.1", "5.1"]
         }
     },
     "ntm": {
-        "repeated": false,
-        "times_repeated": 1,
+        "num_slots": 1,
         "rng_table": {
-            "category": ["ntm_uncommon", "ntm_rare", "ntm_mythic", "ntm_framebreak", "ntm_profile", "ntm_retro", "ntm_borderless_lands"],
+            "category": ["ntm_uncommon", "ntm_rare", "ntm_mythic", "ntm_framebreak", "ntm_profile", "ntm_retro", "mh3_borderless_land"],
             "chance": ["75.0", "21.3", "2.3", "0.8", "0.3", "0.2", "0.1"]
         }
     },
     "wildcard": {
-        "repeated": false,
-        "times_repeated": 1,
+        "num_slots": 1,
         "rng_table": {
-            "category": ["common", "uncommon", "uncommon_mdfc", "mh3_rare", "mh3_mythic", "mh3_booster_fun", "retro_frame_all", "commander_mythics", "full_art_snow"],
+            "category": ["common", "uncommon", "uncommon_mdfc", "mh3_rare", "mh3_mythic", "booster_fun", "retro_frame_all", "commander_mythic", "full_art_snow"],
             "chance": ["41.7", "33.4", "8.3", "6.7", "1.1", "0.4", "4.2", "4.2", "0.1"]
         }
     },
-    "land": {
-        "repeated": false,
-        "times_repeated": 1,
+    "traditional_foil": {
+        "num_slots": 1,
         "rng_table": {
-            "category": ["common", "basic", "basic_foil", "basic_fullart", "basic_fullart_foil", "ntm_all"],
+            "category": ["traditional_foil"],
+            "chance": ["100.0"]
+        }
+    },
+    "land": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["common", "basic_land", "foil_basic_land", "fullart_basic", "foil_fullart_basic", "ntm_all"],
             "chance": ["50.0", "20.0", "13.3", "10.0", "6.7"]
         }
     }
