@@ -48,6 +48,7 @@ def organize_categories(input_file, output_file):
             url_cards_simple.append((str(url_cards_full[i]['name'] + " #" + url_cards_full[i]['collector_number']), url_cards_full[i]['prices']))
         
         # Format the list correctly and add it to the larger set
+        # TODO: Grab specific price (foil v nonfoil) rather than entire array
         full_category = { 'num_cards' : len(url_cards_full), 'cards' : url_cards_simple }
         set[name] = full_category
 
