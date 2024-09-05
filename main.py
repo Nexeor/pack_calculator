@@ -38,7 +38,7 @@ def organize_categories(input_file, output_file):
     for line in input:
         # Parse the category/URL to gather the card list
         print(line.split(';'))
-        name, url = line.split(';')
+        name, url, foil = line.split(';')
         print("Reading from URL: " + url)
         url_cards_full = read_url(url)
         

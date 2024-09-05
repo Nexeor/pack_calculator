@@ -1,0 +1,16 @@
+common;https://api.scryfall.com/cards/search?q=set%3Ablb+r%3Ac+-type%3Abasic+is%3Abooster&unique=cards&as=grid&order=name;nonfoil
+uncommon;https://api.scryfall.com/cards/search?q=set%3Ablb+r%3Au+&unique=cards&as=grid&order=name;nonfoil
+rare;https://api.scryfall.com/cards/search?q=set%3Ablb+r%3Ar++is%3Abooster&unique=cards&as=grid&order=name;nonfoil
+mythic:https://api.scryfall.com/cards/search?q=set%3Ablb+r%3Am+is%3Abooster&unique=cards&as=grid&order=name;nonfoil
+special_guest;https://api.scryfall.com/cards/search?q=set%3Aspg+%28cn>53+AND+cn<64%29&unique=cards&as=grid&order=set;nonfoil
+wildcard;https://api.scryfall.com/cards/search?as=grid&order=name&page=6&q=set%3Ablb+%28cn<337%29+-%28cn>261+AND+cn<287%29+unique%3Aprints+&unique=cards;nonfoil
+foil_wildcard;https://api.scryfall.com/cards/search?as=grid&order=name&page=6&q=set%3Ablb+%28cn<337%29+-%28cn>261+AND+cn<287%29+unique%3Aprints+&unique=cards;foil
+seasonal_basic_spring;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D278+OR+cn%3D266+OR+cn%3D262+OR+cn%3D270+OR+cn%3D274%29+&unique=cards&as=grid&order=name;nonfoil
+seasonal_basic_summer;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D263+OR+cn%3D267+OR+cn%3D271+OR+cn%3D275+OR+cn%3D279%29+&unique=cards&as=grid&order=name;nonfoil
+seasonal_basic_fall;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D264+OR+cn%3D268+OR+cn%3D272+OR+cn%3D276+OR+cn%3D280%29+&unique=cards&as=grid&order=name;nonfoil
+seasonal_basic_winter;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D265+OR+cn%3D269+OR+cn%3D273+OR+cn%3D277+OR+cn%3D281%29+&unique=cards&as=grid&order=name;nonfoil
+foil_seasonal_basic_spring;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D278+OR+cn%3D266+OR+cn%3D262+OR+cn%3D270+OR+cn%3D274%29+&unique=cards&as=grid&order=name;foil
+foil_seasonal_basic_summer;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D263+OR+cn%3D267+OR+cn%3D271+OR+cn%3D275+OR+cn%3D279%29+&unique=cards&as=grid&order=name;foil
+foil_seasonal_basic_fall;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D264+OR+cn%3D268+OR+cn%3D272+OR+cn%3D276+OR+cn%3D280%29+&unique=cards&as=grid&order=name;foil
+foil_seasonal_basic_winter;https://api.scryfall.com/cards/search?q=set%3Ablb+%28cn%3D265+OR+cn%3D269+OR+cn%3D273+OR+cn%3D277+OR+cn%3D281%29+&unique=cards&as=grid&order=name;foil
+token;https://api.scryfall.com/cards/search?q=set%3Atblb+r%3Ac&unique=cards&as=grid&order=set;nonfoil

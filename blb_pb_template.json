@@ -1,0 +1,58 @@
+{
+    "common": {
+        "num_slots": 6,
+        "rng_table": {
+            "category": ["common"],
+            "chance": ["100.0"]
+        }
+    },
+    "special_guest": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["common", "special_guest"],
+            "chance": ["98.44", "1.56"]
+        }
+    },
+    "uncommon": {
+        "num_slots": 3,
+        "rng_table": {
+            "category": ["uncommon"],
+            "chance": ["100.0"]
+        }
+    },
+    "rare": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["rare", "mythic"],
+            "chance": ["85.7", "14.3"]
+        }
+    },
+    "wildcard": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["wildcard"],
+            "chance": ["100.0"]
+        }
+    },
+    "traditional_foil": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["foil_wildcard"],
+            "chance": ["100.0"]
+        }
+    },
+    "seasonal_basic": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["seasonal_basic_spring", "seasonal_basic_summer", "seasonal_basic_fall", "seasonal_basic_winter", "foil_seasonal_basic_spring", "foil_seasonal_basic_summer", "foil_seasonal_basic_fall", "foil_seasonal_basic_winter"],
+            "chance": ["32.0", "24.0", "16.0", "8.0", "8.0", "6.0", "4.0", "2.0"]
+        }
+    },
+    "extra": {
+        "num_slots": 1,
+        "rng_table": {
+            "category": ["token", "art_card", "signature_art_card"],
+            "chance": ["65.0", "30.0", "5.0"]
+        }
+    }
+}

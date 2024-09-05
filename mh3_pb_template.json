@@ -10,7 +10,7 @@
         "num_slots": 1,
         "rng_table": {
             "category": ["common", "special_guest"],
-            "chance": ["99.8", "0.2"]
+            "chance": ["99.8", "1.56"]
         }
     },
     "uncommon": {
